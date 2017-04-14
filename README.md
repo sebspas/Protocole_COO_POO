@@ -10,7 +10,7 @@ du changement de statut (offline, online, away, connected, disconnected...).
 ## Protocole de communication
 Le port a utiliser est le port : 15530 pour les communications de control.
 
-Il faut ensuite crée une nopuvelle socket UDP (DatagramSocket) pour chaque nouvelle discussion,
+Il faut ensuite crée une nopuvelle socket TCP (Socket ou ServerSocket) pour chaque nouvelle discussion,
 cette socket doit être inititaliser avec un port (que vous choissisez). Cependant le port choisit 
 doit être transmit à l'utilisateur pour lequel la socket à été ouverte.
 
